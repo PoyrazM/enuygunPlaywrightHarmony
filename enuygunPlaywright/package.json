@@ -1,0 +1,22 @@
+{
+  "name": "enuygunplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "busTests": "npx playwright test /tests/BusTests.spec.js",
+    "flightTests": "npx playwright test tests/FlightTests.spec.js",
+    "signupTests": "npx playwright test tests/SignUpTests.spec.js --reporter=line,allure-playwright",
+    "allureGenerate": "npx allure generate ./allure-results --clean",
+    "allureOpen": "npx allure open ./allure-report",
+    "html:allure": "npx allure generate --clean allure-results && npx allure open",
+    "html:report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.32.1",
+    "allure-playwright": "^2.1.0"
+  }
+}

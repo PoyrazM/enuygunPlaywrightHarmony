@@ -1,0 +1,8 @@
+{
+    "departureCity": "İzmir",
+    "destinationCity": "İstanbul",
+    "departureDay": 10,
+    "returnDay": 5,
+    "departureProvider": "pegasus",
+    "returnProvider": "thy"
+}
